@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>SudoTeach</title>
+</head>
+
+<body>
+
+<main class="wrapper">
+
+    <section class="main">
+        
+        
+        <div class="container">
+            <span class="blur"></span>
+            
+            <div class="left">
+                
+                <h1 class="title">БУДУЩЕЕ<br>ВМЕСТМЕ<br><span class="no-br">С ТЕЛЕГРАМ</span><br><span>БОТАМИ</span></h1>
+                <span class="blur2"></span>
+                <p class="description" id="desc">
+                    Телеграм-боты: ключ к умному и эффективному будущему, где все решения находятся в ваших руках.
+                </p>
+                <a href="https://t.me/mesudoteach"><button class="feedback-btn">СВЯЗАТЬСЯ В ТЕЛЕГРАМ</button></a>
+            </div>
+
+            <div class="right">
+                <span class="blur2"></span>
+                <img src="assets/images/image.png" class="img" alt="">
+                <span class="blur3"></span>
+            </div>
+            
+
+
+
+
+
+        </div>
+    </section>
+
+        <img src="assets/images/vector2.png" class="vector" id="vector" alt="">
+ 
+    <section class="features">
+        <div class="container">
+            
+            <div class="feature-box">
+                <div class="box-icon">
+                    <img src="assets/icons/icon1.png" alt="CRM, ERP, CMS">
+                    <div class="feature-stick"></div>
+                </div>
+                <div class="box-data">
+                    <h2 class="box-title">CRM, ERP, CMS</h2>
+                    <p class="box-description">Cециализируемся на разработке индивидуальных CRM, ERP и CMS систем, адаптированных под уникальные потребности вашего бизнеса.</p>
+                </div>
+            </div>
+            
+                <div class="feature-box">
+                    <div class="box-icon">
+                        <img src="assets/icons/icon2.png" alt="Подключение приема платежей">
+                    </div>
+                    <div class="box-data">
+                        <h2 class="box-title">Подключение приема платежей</h2>
+                        <p class="box-description">Подключение приема платежей - это одна из наших ключевых услуг, которая поможет вам увеличить конверсию и удерживать клиентов.</p>
+                    </div>
+                </div>
+            <div class="feature-box">
+                <div class="box-icon">
+                    <img src="assets/icons/icon3.png" alt="Каталоги и интернет-магазины">
+                </div>
+                <div class="box-data">
+                    <h2 class="box-title">Каталоги и интернет-магазины</h2>
+                    <p class="box-description">Разработка каталогов и интернет-магазинов, чтобы сделать процесс выбора и покупки товаров 
+                        максимально легким и приятным.</p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="box-icon">
+                    <img src="assets/icons/icon4.png" alt="Landing Page">
+                </div>
+                <div class="box-data">
+                    <h2 class="box-title">Landing Page</h2>
+                    <p class="box-description">Разработкакачественных и привлекательных лендингов, которые помогают компаниям достигать своих целей в онлайн-маркетинге.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+</main>
+<span class="blur4"></span>
+
+<footer>
+    <div class="footer-wrapper">
+        <span class="footer__item"><a href="" class="footer-link">YATT SAGITOV TIMUR RENATOVICH - 2024</a></span> |
+        <span class="footer__item"><a href="" class="footer-link">ОФЕРТА</a></span> |
+        <span class="footer__item"><a href="" class="footer-link">КОНФИДЕНЦИАЛЬНОСТЬ</a></span> |
+        <span class="footer__item"><a href="https://t.me/mesudoteach" class="footer-link">ТЕЛЕГРАМ</a></span>
+
+    </div>
+</footer>    
+
+<script>
+    function updateParagraphContent() {
+            const paragraph = document.getElementById('desc');
+            if (window.innerWidth < 820) {
+                paragraph.textContent = 'Телеграм-боты: ключ к эффективному будущему.';
+            } else {
+                paragraph.textContent = ' Телеграм-боты: ключ к умному и эффективному будущему, где все решения находятся в ваших руках.';
+            }
+        }
+
+    updateParagraphContent();
+    function checkWidth() {
+            const img = document.getElementById('vector');
+            if (window.innerWidth < 391 ) {
+                img.src = 'assets/images/vector3.png';
+            } else if (window.innerWidth > 391 && window.innerWidth < 520) {
+                img.src = 'assets/images/vector2.png';
+            } else {
+                img.src = 'assets/images/vector.png';
+            }
+        }
+
+        // Проверяем ширину при загрузке страницы
+        document.addEventListener("DOMContentLoaded", checkWidth);
+
+        // Проверяем ширину при изменении размера окна
+        window.addEventListener('resize', checkWidth);
+
+</script>
+</body>
+</html>

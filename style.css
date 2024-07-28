@@ -1,0 +1,191 @@
+/* Using Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url(assets/fonts/neuemachina/neuemachina/NeueMachina-Ultrabold.ttf);
+}
+@font-face {
+    font-family: 'NeueMachinaRegular';
+    src: url(assets/fonts/neuemachina/neuemachina/NeueMachina-Regular.ttf);
+}
+@font-face {
+    font-family: 'MontHeavy';
+    src: url(assets/fonts/mont/Mont-HeavyDEMO.otf);
+}
+@font-face {
+    font-family: 'MontExtraLight';
+    src: url(assets/fonts/mont/Mont-ExtraLightDEMO.otf);
+}
+
+/*Stylesheet*/
+
+body{
+    background-color: #1A181D;
+    color: #fff;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-top: -40px;
+}
+
+.wrapper{
+    position: relative;
+    width: 100vw;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.main{
+    margin-top: 44px;
+}
+
+.main .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.main .container .left h1{
+    font-size: 88px;
+    font-family: 'NeueMachina';
+    margin-top: 64px;
+}
+
+.main .container .left h1 span{
+    color: #FA00FF;
+}
+.main .container .left p{
+    font-size: 16px;
+    font-family: 'NeueMachinaRegular';
+    width: 487px;
+    margin:20px 0;
+}
+.main .container .left .feedback-btn{
+    background: rgb(240,148,209);
+    background: linear-gradient(90deg, rgba(240,148,209,1) 0%, rgba(139,106,187,1) 100%);
+    width: 244px;
+    height: 44px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    border:1px solid #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 0 5px  #fff;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+
+.main .container .left .feedback-btn:hover{
+    box-shadow: 0 0 7px  #fff;
+}
+
+.main .container .right .img{
+    width: 693px;
+    height: 637px;
+}
+
+.features{
+    padding: 20px 0;
+}
+.features .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.features .container .feature-box{
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+}
+
+.features .container .feature-box img{
+    width: 55px;
+}
+.features .container .feature-box .box-data .box-title{
+    font-family: 'MontHeavy';
+    font-size: 20px;
+    padding: 15px 0 0 15px;
+}
+.features .container .feature-box .box-data .box-description{
+    font-family: 'MontExtraLight';
+    font-size: 20px;
+    padding: 0 0 0 15px;
+}
+
+
+
+
+
+
+
+footer{
+    margin-top: 380px;
+    margin-bottom: 20px;
+}
+.footer-wrapper{
+    text-align: center;
+    font-family: "Inder", sans-serif;
+}
+.footer-link{
+    font-size: 14px;
+}
+
+
+
+a{
+    color: #fff;
+    font-family: "Inder", sans-serif;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 40px #662981;
+    z-index: -100;
+}
+.blur2{
+    position: absolute;
+    box-shadow: -200px 0 1000px 90px #662981;
+    z-index: -100;
+}
+.blur3{
+    position: absolute;
+    box-shadow: -250px 780px 2500px 230px #662981;
+    z-index: -100;
+}
+.blur4{
+    position: absolute;
+    box-shadow: -200px 250px 4000px 250px #662981;
+    z-index: -100;
+}
+
+.vector{
+    position: absolute;
+    margin-top: -560px;
+    margin-right: -300px!important;
+    margin-left: 440px;
+    width: 1362px;
+    height: 1362px;
+    z-index: -1;
+    max-width: none;
+    overflow:hidden;
+}
+.no-br{
+    white-space:nowrap;
+}
+.feature-stick{
+    display: none;
+}
